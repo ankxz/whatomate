@@ -119,9 +119,11 @@ echo ============================================================
 echo.
 echo Whatomate is now running in Docker containers!
 echo.
-echo Access URLs:
-echo   Frontend:  http://localhost:5173
-echo   Backend:   http://localhost:8080
+echo Access URL:
+echo   Whatomate:  http://localhost:8080
+echo.
+echo Note: Both frontend and API are served on port 8080
+echo       /api and /ws are proxied to backend container
 echo.
 echo Next Steps:
 echo   1. Open http://localhost:5173 in your browser
@@ -155,7 +157,7 @@ echo.
 echo Press any key to open Whatomate in your browser...
 pause >nul
 
-start http://localhost:5173
+start http://localhost:8080
 
 echo.
 echo [INFO] Whatomate is running in the background.

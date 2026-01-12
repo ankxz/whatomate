@@ -62,14 +62,13 @@ This wizard will:
 
 After setup completes:
 
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:8080
+- **Whatomate**: http://localhost:8080
 - **Default Login**:
   - Email: `admin@admin.com`
   - Password: `admin`
 
 **To see Embedded Signup:**
-1. Login at http://localhost:5173
+1. Login at http://localhost:8080
 2. Click **Settings** in sidebar
 3. Click **Embedded Signup**
 4. Create your first signup configuration
@@ -151,7 +150,7 @@ Then run `START_DOCKER_WINDOWS.bat` again to start fresh.
 
 ### "Port already in use"
 
-If you see errors about ports 5173, 8080, 5432, or 6379:
+If you see errors about ports 8080, 5432, or 6379:
 
 **Option 1: Stop the conflicting service**
 ```cmd
@@ -457,7 +456,7 @@ docker-compose -f docker-compose.dev.yml up -d
 
 Once your Docker setup is running:
 
-1. ✅ Login at http://localhost:5173
+1. ✅ Login at http://localhost:8080
 2. ✅ Go to Settings → Embedded Signup
 3. ✅ Create your first signup configuration:
    - Name: "Test Signup"
@@ -483,7 +482,7 @@ See `docs/embedded-signup.md` for complete feature documentation.
 - [ ] Docker Desktop is installed and running
 - [ ] Ran `START_DOCKER_WINDOWS.bat` successfully
 - [ ] All 4 containers are running (check: `docker-compose -f docker-compose.dev.yml ps`)
-- [ ] Can access http://localhost:5173
+- [ ] Can access http://localhost:8080
 - [ ] Can login with admin credentials
 - [ ] See "Embedded Signup" in Settings menu
 - [ ] Can create test signup configuration
