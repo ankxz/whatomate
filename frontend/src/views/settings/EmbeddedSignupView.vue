@@ -336,11 +336,11 @@ const integrationCode = computed(() => {
   return `<!DOCTYPE html>
 <html>
 <head>
-    <title>WhatsApp Business Signup</title>
-    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
-</head>
+    <title>WhatsApp Business Signup<\/title>
+    <script src="https://connect.facebook.net/en_US/sdk.js"><\/script>
+<\/head>
 <body>
-    <h1>Sign Up for WhatsApp Business API</h1>
+    <h1>Sign Up for WhatsApp Business API<\/h1>
     <button id="whatsapp-signup-btn" style="
         background: #25D366;
         color: white;
@@ -351,7 +351,7 @@ const integrationCode = computed(() => {
         cursor: pointer;
     ">
         🔗 Sign Up with WhatsApp Business
-    </button>
+    <\/button>
 
     <script>
         const SIGNUP_ID = '${signupId}';
@@ -428,9 +428,9 @@ const integrationCode = computed(() => {
                 console.error('Failed to load config:', err);
                 alert('Failed to load signup configuration');
             });
-    </script>
-</body>
-</html>`
+    <\/script>
+<\/body>
+<\/html>`
 })
 
 function getStatusColor(status: string) {
